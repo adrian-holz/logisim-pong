@@ -1,0 +1,30 @@
+# Wahrheitstabelle
+# Erzeugt aus der Schaltung PosBallX
+# Exportiert auf Thu Nov 30 10:35:37 CET 2023
+
+# Hinweise und Hinweise zur Formatierung:
+# * Sie können diese Datei bearbeiten und dann wieder in Logisim-evolution importieren!
+# * Alles nach einem'#' ist ein Kommentar und wird ignoriert.
+# * Leerzeilen und Trennzeichen (z.B. ~~~~~~) werden ignoriert.
+# * Halten Sie die Spaltennamen einfach (keine Leerzeichen, Satzzeichen, etc.).
+# *'Name[N..0]' bezeichnet eine N 1 Bit Variable, während
+# 'Name' selbst bezeichnet eine 1-Bit-Variable.
+# * Du kannst "x" oder "-" verwenden, um anzugeben, dass "don't care" für beide gilt.
+# Ein- und Ausgangsbits.
+# * Sie können die binäre (z.B. 10100011xxxxxx') Notation verwenden oder
+# oder hex (z.B.'C3x'). Logisim-evolution wird herausfinden, was was ist.
+
+Up Down GOben GUnten StartUp StartDown Reverse Stop | Up_True Down_True Up_Simple Down_Simple
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  -    -     -      -       -         -       1    | 0  0              0 0
+0  0    0     0      1       -         -       0    | 1  0              1 0
+0  0    0     0      0       1         -       0    | 0  1              0 1
+1  -    0     0      -       -         0       0    | 1  0              1 0
+0  1    0     0      -       -         0       0    | 0  1              0 1
+1  -    0     0      -       -         1       0    | 0  1              1 0
+0  1    0     0      -       -         1       0    | 1  0              0 1
+-  -    1     -      -       -         -       0    | 0  1              0 1
+-  -    0     1      -       -         -       0    | 1  0              1 0
+0  0    0     0      0       0         0       0    | 0  0              0 0
+0  0    0     0      0       0         1       0    | -  -              0 0
+
